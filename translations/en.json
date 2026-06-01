@@ -2,7 +2,7 @@
   "app": {
     "name": "SubZen",
     "short_description": "AI-powered ticket subject generator",
-    "long_description": "SubZen uses Groq AI to automatically generate concise, relevant subject lines for your support tickets based on their description. Supports English, Spanish, French, Italian, and Mandarin Chinese. Optionally auto-applies the subject when a ticket is opened.",
+    "long_description": "SubZen uses AI to automatically generate concise, relevant subject lines for your support tickets based on their description. Supports English, Spanish, French, Italian, and Mandarin Chinese. Optionally auto-applies the subject when a ticket is opened.\n\nBy default, SubZen uses a shared service (hosted on Supabase) that routes requests through an AI language model to generate subject suggestions. You can alternatively provide your own API key for OpenAI or Groq and use your own account directly.\n\n**Data Disclosure:** SubZen sends the ticket description text to an AI provider (Anthropic Claude, OpenAI, or Groq) solely for the purpose of generating a subject line. No ticket data is stored or logged by SubZen or its proxy service. Ticket content is transmitted securely over HTTPS. By using this app, you acknowledge that ticket description content will be processed by the selected AI provider according to their respective privacy policies.",
     "installation_instructions": "SubZen detects the ticket language automatically and generates a concise subject.\n\n✓ autoApply — check this to apply the subject automatically when a ticket opens.\n\n✓ fallback_en_es_fr_it_zh — language to use if the ticket language cannot be detected.\n   en (English) · es (Spanish) · fr (French) · it (Italian) · zh (Mandarin)"
   },
   "parameters": {
