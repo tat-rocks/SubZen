@@ -52,8 +52,7 @@
       "name": "ai_api_key",
       "type": "text",
       "secure": true,
-      "required": false,
-      "scopes": ["read", "write"]
+      "required": false
     }
   ]
 }
